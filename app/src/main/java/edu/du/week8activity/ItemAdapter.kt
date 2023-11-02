@@ -27,7 +27,7 @@ class ItemAdapter(context: Context, private var items: ArrayList<ListItem>) :
             fun bind(item: ListItem) {
                 currentItem = item
 
-                val uri: Uri = Uri.parse("https://robohash.org/" + item.name + "?size=200x200")
+                val uri: Uri = Uri.parse("https://robohash.org/" + item.name + "?set=set4")
                 itemView.findViewById<TextView>(R.id.item_title).text = item.name
                 loadImage(context, itemView.findViewById(R.id.item_image), uri)
             }
@@ -41,7 +41,7 @@ class ItemAdapter(context: Context, private var items: ArrayList<ListItem>) :
         fun bind(item: ListItem) {
             currentItem = item
 
-            val uri: Uri = Uri.parse("https://robohash.org/" + item.name + "?size=200x200")
+            val uri: Uri = Uri.parse("https://robohash.org/" + item.name + "?set=set4")
             itemView.findViewById<TextView>(R.id.item_title).text = item.name
             loadImage(context, itemView.findViewById(R.id.item_image), uri)
         }
